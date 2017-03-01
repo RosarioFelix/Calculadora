@@ -10,19 +10,24 @@
   <h1>Calculadora IMC</h1>
   <h3>Indice de Masa Corporal</h3>
   <section>
-    <div class="">
-      <label for="Peso">Ingrese Peso</label>
-       <input id= "Peso" type="text" name="Peso" > <p>
-      <label for="Altura">Ingrese Altura</label>
-       <input id= "Altura" type="text" name="Altura" ><p>
-      <label>
-       <input id= "Sexo-0" type="radio" name="Sexo" >
-       Maculino</label>
-      <label>
-        <input id= "Sexo-1" type="radio" name="Sexo" >
-        Femenino</label>
-    </div><br>
-    <button type="submit" name="Calcular">Calcular</button>
+    <form class="" action="index.html" method="post">
+      <div class="">
+        <label for="Peso">Ingrese Peso</label>
+         <input id= "Peso" type="number" name="Peso" required pattern = [0-9]/> <p>
+        <label for="Altura">Ingrese Altura Centimetros</label>
+         <input id= "Altura" type="number" name="Altura" required pattern = [0-9]/><p>
+        <label>
+         <input id= "Sexo-0" type="radio" name="Sexo" required/>
+         Maculino</label>
+        <label>
+          <input id= "Sexo-1" type="radio" name="Sexo"required/>
+          Femenino</label>
+      </div><br>
+      <button id="calcula" type="button" name="button">Enviar</button>
+       <div id="record" style="margin-top: 25px"></div>
+
+    </form>
+
 
   </section>
   <script type = "text/javascript"src="assets/js/peso.js" charset="utf-8"></script>
